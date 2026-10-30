@@ -54,20 +54,10 @@ Small sample size (2-fold CV only), heterogeneous labels, VAE variance across se
 ## 🚀 Future work
 Pull in more GEO/ArrayExpress data · hierarchical classification · sparse models (LASSO) for cleaner gene sets · conditional VAE · full-hierarchy GO / GSEA
 
-## 📁 Repo structure
-```
-├── data/            # place input CSVs here (see data/README.md)
-├── notebooks/
-│   └── yeast_ml.ipynb   # preprocessing → PCA models → VAE → CV → GO enrichment
-├── images/          # charts exported from the notebook
-├── report/          # full write-up (PDF)
-├── requirements.txt
-└── README.md
-```
+
 
 ## ▶️ Run it
 ```bash
 pip install -r requirements.txt
-# put the five CSVs in data/, then:
 jupyter notebook notebooks/yeast_ml.ipynb
 ```
